@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Povrsina kruga</title>
+    <style>
+        #wrapper{
+            width: 400px;
+            margin: 100px auto auto;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <form name="form">
+        <h4>Racunanje povrsine kruga na osnovu unete vrednosti r u centimetrima.</h4>
+        <p>Unesite r : <label>
+            <input type="text" name="txtNum">
+        </label></p>
+        <p><input type="button" value="Izracunaj " onclick="addnum()"></p>
+        <p>Povrsina kruga je: <label>
+            <input type="text" name="txtSum">
+        </label> cm <sup>2</sup>.</p>
+    </form>
+
+    <script type="text/javascript">
+        function addnum()
+        {
+            const Pi = 3.14;
+            let num1;
+            let sum;
+            num1 = document.form.txtNum.value;
+            sum = num1 * num1 * Pi;
+            document.form.txtSum.value = sum;
+        }
+
+    </script>
+</div>
+
+</body>
+
+</html>
+<!-- Made by Anja Ilic -->
+</body>
