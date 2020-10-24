@@ -1,0 +1,63 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment - Manipulisanje strukturom, stilizacijom i podacima korišćenjem JS-a</title>
+
+    <style>
+        body {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .mid {
+            padding: 30px;
+        }
+
+        #color {
+            padding-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+<div class="title">
+    <h1>
+        Assignment - Manipulisanje strukturom, stilizacijom i podacima korišćenjem JS-a
+    </h1>
+</div>
+
+
+<div class="mid">
+
+    <label for="shoes"></label><select name="shoes" id="shoes">
+        <option value="High heels">High heels</option>
+        <option value="Sandals">Sandals</option>
+        <option value="Boots">Boots</option>
+        <option value="Flats">Flats</option>
+        <option value="Sneakers">Sneakers</option>
+    </select>
+
+    <div id="color"></div>
+
+</div>
+
+
+
+<script>
+    let brow = document.getElementById("shoes");
+
+    brow.onchange = function () {
+
+        let res = document.getElementById("color");
+        res.innerHTML = brow.value;
+    }
+</script>
+</body>
+</html>
